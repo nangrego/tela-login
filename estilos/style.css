@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*
-    Paleta de cores:
-    Verde: #49a09d
-    Lilás: #c29ba2
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +51,78 @@ div#imagem::before {
 }
 
 section#login > div#formulario {
-    display: block;
+    text-align: center;
     padding: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: .9em;
+    margin: 10px 0;
+}
+
+.campo {
+    background-color: #691438;
+    color: #c29ba2;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+label {
+    display: none;
+}
+
+.campo > i {
+    width: 30px;
+}
+
+.campo > input {
+    background-color: #c29ba2;
+    color: #691438;
+    border: none;
+    height: 36px;
+    width: calc(100% - 34px);
+    border-radius: 8px;
+    transform: translate(6px, -8px);
+}
+
+.campo > input:focus-within {
+    background-color: white;
+    outline: none;
+}
+
+.bt-send {
+    display: block;
+    background-color: #691438;
+    color: #c29ba2;
+    font-weight: 700;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.bt-send:hover {
+    background-color: #c29ba2;
+    color: #691438;
+    border: 2px solid #691438;
+}
+
+.bt-send:focus {
+    outline: 2px solid #c29ba2;
+}
+
+div#formulario  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8em;
+    text-decoration: none;
 }
